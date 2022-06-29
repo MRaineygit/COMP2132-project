@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="styles/styles.css" rel="stylesheet"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script defer src="scripts/script.js"></script>
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="styles/styles.css" type="text/scss">
+</head>
+
+<body>
+
+<div id="title0">
+<div id="gradient">
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <div class="container">
+        <h1 class="text-center" id="title">Hangman</h1>
+        <!-- LETTERS ARE INPUTTED HERE-->
+        
+        <div><img id="hangmanPic"  src="images/0.PNG" alt=""></div>
+        <div id="definition-output-div" class="definition-div hidden">
+          
+            <p class="definition-txt  strong"></p>
+            
+        </div>
+        <div class="letter-div " id = "letter-div"></div>
+        <div id="letter-container">
+            <!-- BLANK THEN FILLED IN LETTERS GO HERE-->
+            <div class="word-div "> </div>
+        </div>
+        <h3>Guesses left: <span class="lives"></span></h3>
+        <div class="row definition-div  ">
+            <button id="definition-btn" class="btn btn-info">Definition</button>
+            <button id="reset_btn" class="reset-btn btn btn-info text-center">Restart</button>
+        </div>
+    
+        <div class="notif hidden">
+            <h2 class="notif-content2">Game Is Over &#9786;</h2>
+            <h3 class="notif-content">You won</h3>
+            <h4>Correct Word: <span class="notif-span"></span></h4>
+            <button class="notif-btn">Play again</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<footer>
+
+        <h3 id="footer-text">&copy;  COMP 2132 Sami Roudgarian &amp; Marlowe Rainey</h3><br> <br>
+        <div id="waves">
+            <div class="waveWrapper waveAnimation">
+                <div class="waveWrapperInner bgTop">
+                    <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+                </div>
+                <div class="waveWrapperInner bgMiddle">
+                    <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+                </div>
+                <div class="waveWrapperInner bgBottom">
+                    <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+                </div>
+            </div>
+        </div>
+
+</footer>
+</body>
+
+
+</html>
